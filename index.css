@@ -15,7 +15,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    /* padding: 150px 0; */
     height: 100vh;
     min-width: 560px;
 }
@@ -60,6 +60,7 @@ main {
 .card-head {
     width: 76%;
     display: flex;
+    font-size: 16px;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
@@ -148,6 +149,10 @@ main {
 }
 
 @media only screen and (max-width: 975px) {
+    main {
+        padding: 150px 0;
+    }
+
     .cards-container {
         display: flex;
         flex-direction: column;
