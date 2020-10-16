@@ -15,7 +15,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 150px 0; */
     height: 100vh;
     min-width: 560px;
 }
@@ -41,10 +40,12 @@ main {
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 100.5%;
     height: 400px;
     width: 560px;
     border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 3px 5px black;
 }
 
 .card-back h3 {
