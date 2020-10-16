@@ -126,7 +126,7 @@ main {
 }
 
 .card-body p {
-    margin: 25px 5px 0;
+    margin: 15px 5px 5px;
     color: #0b234d;
 }
 
@@ -146,8 +146,8 @@ th {
 }
 
 .paragraph {
-    margin: 10px 10px 0;
     line-height: 1rem;
+    padding: 25px 10px 0;
     font-size: 20px;
 }
 
