@@ -52,18 +52,29 @@ main {
     width: 100%;
     padding: 7px 0 0;
     height: 35px;
-    border: 1px solid rgb(30, 61, 153);
-    background-color: rgb(30, 61, 153);
+    border: 1px solid #0b234d;
+    background-color: #0b234d;
     color: white;
 }
 
 .card-head {
     width: 76%;
     display: flex;
-    font-size: 16px;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+}
+
+.card-head h3 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-head h3 span {
+    padding-top: 3px;
+    font-size: 15px;
 }
 
 .left-h3 {
@@ -71,7 +82,7 @@ main {
     align-items: center;
     height: 0;
     width: 0;
-    border-right: 25px solid rgb(30, 61, 153);
+    border-right: 25px solid #0b234d;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
@@ -88,7 +99,7 @@ main {
 .right-h3 {
     height: 0;
     width: 0;
-    border-left: 25px solid rgb(30, 61, 153);
+    border-left: 25px solid #0b234d;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
@@ -119,6 +130,7 @@ main {
     background-color: #f4f272;
     height: 80%;
     width: 85%;
+    font-size: 12px;
     padding-left: 15px;
 }
 
