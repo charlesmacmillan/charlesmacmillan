@@ -91,7 +91,7 @@ main {
     margin-left: 15px;
     height: 0;
     width: 0;
-    border-right: 25px solid #f4f272;
+    border-right: 25px solid #F1D90F;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
@@ -104,16 +104,6 @@ main {
     border-bottom: 22px solid transparent;
 }
 
-.card-body {
-    margin-top: 5px;
-    width: 75%;
-    height: 70%;
-    background-image: url('https://i.imgur.com/P8sWiPO.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .dev {
     margin:  0 0 -122px 30px;
     width: 95px;
@@ -121,17 +111,61 @@ main {
     border: 2px solid black;
 }
 
+.card-body {
+    margin-top: 5px;
+    width: 75%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://i.imgur.com/FiotiQL.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-body p {
+    margin-bottom: 0px;
+    color: #0b234d;
+}
+
+table {
+    font-size: 10px;
+    line-height: .5rem;
+    width: 90%;
+}
+
+th {
+    margin: 0 auto;
+    border-bottom: 2px solid #0b234d;
+}
+
+.bottom-row {
+    border-bottom: 2px solid #0b234d;
+}
+
+.paragraph {
+    margin: 10px 10px 0;
+    line-height: 1rem;
+    font-size: 20px;
+}
+
+.paragraph span {
+    color: #E42223;
+}
+
 .bottom {
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f4f272;
+    background-color: #F1D90F;
     height: 80%;
     width: 85%;
     font-size: 12px;
     padding-left: 15px;
+    margin: 0 0 7px -44px;
 }
 
 .bottom a {
