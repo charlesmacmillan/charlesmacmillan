@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap');
 
 body {
+    text-align: center;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+    font-family: 'Allan';
     background-image: url('https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2191.jpg?size=626&ext=jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
 }
@@ -12,40 +15,123 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    padding: 150px 0;
     height: 100vh;
+    min-width: 560px;
 }
 
 .cards-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 
 .card {
     display: flex;
     flex-direction: column-reverse;
     width: 400px;
-    margin: 50px;
 }
 
-.card-back img {
+.card-back {
+    background-image: url('https://i.imgur.com/REF4vj8.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+    width: 560px;
     border-radius: 10px;
 }
 
+.card-back h3 {
+    margin: 0;
+    width: 100%;
+    padding: 7px 0 0;
+    height: 35px;
+    border: 1px solid rgb(30, 61, 153);
+    background-color: rgb(30, 61, 153);
+    color: white;
+}
+
+.card-head {
+    width: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.left-h3 {
+    display: flex;
+    align-items: center;
+    height: 0;
+    width: 0;
+    border-right: 25px solid rgb(30, 61, 153);
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.inner-left-h3 {
+    margin-left: 15px;
+    height: 0;
+    width: 0;
+    border-right: 25px solid #f4f272;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.right-h3 {
+    height: 0;
+    width: 0;
+    border-left: 25px solid rgb(30, 61, 153);
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.card-body {
+    margin-top: 5px;
+    width: 75%;
+    height: 70%;
+    background-image: url('https://i.imgur.com/P8sWiPO.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .dev {
-    margin:  0 0 -120px 30px;
+    margin:  0 0 -122px 30px;
     width: 95px;
     border-radius: 50%;
     border: 2px solid black;
 }
 
+.bottom {
+    border-radius: 5px 0 0 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f272;
+    height: 80%;
+    width: 85%;
+    padding-left: 15px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: green;
+}
+
+.bottom a:hover {
+    color: blue;
+}
+
 .card h1 {
-    text-align: center;
-    font-family: 'Allan';
     margin: -80px 0 0 95px;
-    line-height: 1.4rem;
-    letter-spacing: 2px;
     z-index: 100;
     font-size: 28px;
 }
@@ -61,3 +147,28 @@ main {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 975px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-back {
+        margin-top: 50px;
+    }
+}
+/* 
+@media only screen and (max-width: 600px) {
+    .card-back {
+        width: 100%;
+        justify-content: center;
+    }
+    .card,
+    #card {
+        margin-top: 150px;
+        width: 100%;
+    }
+
+    .dev {
+        margin-bottom: -265px;
+    }
+} */
